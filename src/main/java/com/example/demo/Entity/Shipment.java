@@ -17,18 +17,18 @@ public class Shipment{
     private Vehicle vehicle;
 
     @ManyToOne
-    @JoinColumn(name="pickuplocation_id",nullable=false)
+    @JoinColumn(name="pick_uplocation_id",nullable=false)
     private Location pickuplocation;
 
     @ManyToOne
-    @JoinColumn(name="droplocaion_id",nullable=false)
+    @JoinColumn(name="drop_locaion_id",nullable=false)
     private Location droplocation;
 
     private Double weight;
 
     private LocalDate scheduledDate;
 
-    public Long getID(){
+    public Long getId(){
         return id;
     }
     public void setVehicle(Vehicle vehicle){
@@ -38,12 +38,17 @@ public class Shipment{
         return vehicle;
     }
     public void setPickLocation(Location pickuplocation){
-        this.location = pickuplocation;
+        this.pickuplocation = pickuplocation;
     }
     public Location getPickLocation(){
         return pickuplocation;
     }
-    public void setDropLocation
+    public void setDropLocation(Location droplocation){
+        this.droplocation = droplocation;
+    }
+    public Location getDropLocation(){
+        return droplocation;
+    }
     public void setWeight(Double weight){
         this.weight = weight;
     }
