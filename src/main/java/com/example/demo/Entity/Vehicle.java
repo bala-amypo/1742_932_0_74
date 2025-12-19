@@ -26,7 +26,16 @@ public class Vehicle(){
     public void setVehicle(String vehicleNumber){
         this.vehicleNumber = vehicleNumber;
     }
-    public String 
+    public String getVehicle(){
+        return vehicleNumber;
+    }
+    public void setCapacity(Double capacitykg){
+        this.capacitykg = capacitykg;
+    }
+    public Double getCapacity(){
+        return capacitykg;
+    }
+    public User setUser()
 
     
 
