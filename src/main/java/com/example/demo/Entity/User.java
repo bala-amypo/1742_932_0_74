@@ -9,7 +9,7 @@ import jakarta.persistence.*;
 public class User{
  
     public enum Role{
-       Strin 'User',
+        User,
        Admin
     } 
     @ID
@@ -18,7 +18,8 @@ public class User{
     private String name;
     private String email;
     private String password;
-    private String role;
+    @Enumerated(EnumType.String)
+    private Role role = Role.User;
 
 
     
