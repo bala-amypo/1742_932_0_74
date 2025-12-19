@@ -7,6 +7,9 @@ import jakarta.persistence.*;
     @UniqueConstraint(columnNames="vehicleNumber")
 })
 public class Vehicle(){
-    @
+    @Id
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    private Long id;
+    
 
 }
