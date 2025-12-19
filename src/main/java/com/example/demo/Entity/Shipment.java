@@ -18,11 +18,11 @@ public class Shipment{
 
     @ManyToOne
     @JoinColumn(name="pickuplocation_id",nullable=false)
-    private Location location;
+    private Location pickuplocation;
 
     @ManyToOne
     @JoinColumn(name="droplocaion_id",nullable=false)
-    private Location location;
+    private Location droplocation;
 
     private Double weight;
 
@@ -37,12 +37,13 @@ public class Shipment{
     public Vehicle getVehicle(){
         return vehicle;
     }
-    public void setLocation(Location location){
-        this.location = location;
+    public void setPickLocation(Location pickuplocation){
+        this.location = pickuplocation;
     }
-    public Location getLocation(){
-        return location;
+    public Location getPickLocation(){
+        return pickuplocation;
     }
+    public void setDropLocation
     public void setWeight(Double weight){
         this.weight = weight;
     }
