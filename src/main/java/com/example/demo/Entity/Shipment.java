@@ -11,5 +11,9 @@ public class Shipment{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
     @ManyToOne
+    @JoinColumn(name="vehicle_id",nullable=false)
+    private Vehicle vehicle;
+    @ManyToOne
+    @JoinColumn(name="")
 
 }
