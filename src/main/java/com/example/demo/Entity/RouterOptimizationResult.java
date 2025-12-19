@@ -10,7 +10,13 @@ public class RouterOptimiztionResult{
 
     @Id
     @GeneratedValue(strategy=GenrationType.IDENTITY)
-    private lO
+    private Long id;
+    @ManyToOne
+    @JoinColumn(ColumnNames="shipment_id",nullable=false)
+    private Shipment shipment
+
+    private Double optimizedDistanceKm;
+    private Double estimated
 
 
 }
