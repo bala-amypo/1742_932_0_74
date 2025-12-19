@@ -14,7 +14,8 @@ public class Vehicle(){
     @JoinColumn(name="user",nullable=false)
     private User user;
     private String vehicleNumber;
-    private double
+    private Double capacitykg;
+    private 
 
     
 
