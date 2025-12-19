@@ -8,7 +8,7 @@ import jakarta.persistence.*;
 })
 public class User{
     public User(){
-        
+
     }
  
     public enum Role{
@@ -23,6 +23,13 @@ public class User{
     private String password;
     @Enumerated(EnumType.String)
     private Role role = Role.User;
+
+    public Long getid(){
+        return id;
+    }
+
+    public void setName(String )
+
 
 
     
