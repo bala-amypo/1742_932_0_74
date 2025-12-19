@@ -6,7 +6,6 @@ import java.time.LocalDate;
 @Table(name="Shipment")
 public class Shipment{
     public Shipment(){
-
     }
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
