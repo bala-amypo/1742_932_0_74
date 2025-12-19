@@ -7,6 +7,9 @@ import jakarta.persistence.*;
     @UniqueConstraint(columnNames="email")
 })
 public class User{
+    public User(){
+        
+    }
  
     public enum Role{
         User,
