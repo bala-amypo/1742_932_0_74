@@ -34,12 +34,22 @@ public class User{
     public String getName(){
         return name;
     }
-    public void setEmail(){
+    public void setEmail(String email){
         this.email = email;
     }
     public String getEmail(){
-        return 
+        return email;
     }
+    public void setPass(String pass){
+        this.password = pass;
+    }
+    public String getpass(){
+        return password;
+    }
+    public String setRole(String role){
+      this.role = role;
+    }
+    public void
 
 
     
