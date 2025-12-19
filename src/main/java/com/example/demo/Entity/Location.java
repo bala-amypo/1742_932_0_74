@@ -5,12 +5,28 @@ import jakarta.persistence.*;
 @Table(name="Location")
 public class Location{
 
+    public Location(){
+
+    }
+
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
     private String name;
     private Double latitude;
-    private Double 
+    private Double longitude;
+    public int getId(){
+        return id;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setLatitude(Double latitude)
+
+
 
 
 }
