@@ -8,6 +8,10 @@ import jakarta.persistence.*;
 })
 public class User{
  
+    public enum Role{
+       Strin 'User',
+       Admin
+    } 
     @ID
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
