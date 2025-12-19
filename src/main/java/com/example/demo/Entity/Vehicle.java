@@ -14,13 +14,13 @@ public class Vehicle{
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
-    @JoinColumn(name="user",nullable=false)
+    @JoinColumn(name="user_id",nullable=false)
     private User user;
     private String vehicleNumber;
     private Double capacitykg;
     private Double fuelEfficiency;
 
-    public Long getID(){
+    public Long getId(){
         return id;
     }
     public void setVehicleNumber(String vehicleNumber){
@@ -32,16 +32,19 @@ public class Vehicle{
     public void setCapacitykg(Double capacitykg){
         this.capacitykg = capacitykg;
     }
-    public Double get capacitykg(){
+    public Double getCapacitykg(){
         return capacitykg;
     }
-    public User setUser(User user){
+    public void setUser(User user){
         this.user = user;
     }
-    public void setFuel(Double fuelEfficiency ){
+    public User getUser(){
+        return user;
+    }
+    public void setFuelEfficiency(Double fuelEfficiency ){
         this.fuelEfficiency = fuelEfficiency;
     }
-    public Double getFule(){
+    public Double getFuelEfficiency(){
         return fuelEfficiency;
     }
 
