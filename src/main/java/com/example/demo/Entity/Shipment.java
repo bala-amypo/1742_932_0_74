@@ -43,7 +43,18 @@ public class Shipment{
     public Location getLocation(){
         return location;
     }
-    
+    public void setWeight(Double weight){
+        this.weight = weight;
+    }
+    public Double getWeight(){
+        return weight;
+    }
+    public void setScheduledDate(LocalDate scheduledDate){
+        this.scheduledDate = scheduledDate;
+    }
+    public LocalDate getScheduledDate(){
+        return scheduledDate;
+    }
 
 
 
