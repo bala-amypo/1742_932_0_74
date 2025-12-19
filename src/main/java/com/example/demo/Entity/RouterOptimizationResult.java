@@ -10,11 +10,11 @@ public class RouterOptimiztionResult{
     }
 
     @Id
-    @GeneratedValue(strategy=GenrationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
     @ManyToOne
-    @JoinColumn(ColumnNames="shipment_id",nullable=false)
-    private Shipment shipment
+    @JoinColumn(name="shipment_id",nullable=false)
+    private Shipment shipment;
 
     private Double optimizedDistanceKm;
     private Double estimatedFuelUsage;
@@ -28,8 +28,7 @@ public class RouterOptimiztionResult{
     public Shipment getShipment(){
         return shipment;
     }
-    private Double optimizedDistanceKm;
-    private Double optimizedDistanceKm;
+  
     public void setOptimizedDistanceKm(Double optimizedDistanceKm){
         this.optimizedDistanceKm = optimizedDistanceKm;
     }
@@ -40,7 +39,7 @@ public class RouterOptimiztionResult{
         this.estimatedFuelUsage = estimatedFuelUsage;
     }
 
-    public double getEstimatedFuelUsage(){
+    public Double getEstimatedFuelUsage(){
         return estimatedFuelUsage;
     }
 
