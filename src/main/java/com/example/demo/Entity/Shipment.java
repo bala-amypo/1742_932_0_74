@@ -37,7 +37,13 @@ public class Shipment{
     public Vehicle getVehicle(){
         return vehicle;
     }
-    public void 
+    public void setLocation(Location location){
+        this.location = location;
+    }
+    public Location getLocation(){
+        return location;
+    }
+    
 
 
 
