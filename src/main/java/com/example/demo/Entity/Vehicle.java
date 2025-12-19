@@ -4,8 +4,9 @@ import jakarta.persistence.*;
 
 @Entity
 @Table(name="Vehicle",uniqueConstraints={
-    @UniqueConstrain(n)
+    @UniqueConstraint(columnNames="vehicleNumber")
 })
 public class Vehicle(){
+    @
 
 }
