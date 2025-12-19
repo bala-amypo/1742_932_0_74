@@ -7,6 +7,9 @@ import jakarta.persistence.*;
     @UniqueConstraint(columnNames="vehicleNumber")
 })
 public class Vehicle(){
+    public Vehicle(){
+
+    }
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Long id;
@@ -15,7 +18,15 @@ public class Vehicle(){
     private User user;
     private String vehicleNumber;
     private Double capacitykg;
-    private 
+    private Double fuelEfficiency;
+
+    public Long getID(){
+        return id;
+    }
+    public void setVehicle(String vehicleNumber){
+        this.vehicleNumber = vehicleNumber;
+    }
+    public String 
 
     
 
