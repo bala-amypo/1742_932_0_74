@@ -10,20 +10,35 @@ public class Shipment{
     }
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private long id;
+    private Long id;
+    
     @ManyToOne
     @JoinColumn(name="vehicle_id",nullable=false)
     private Vehicle vehicle;
+
     @ManyToOne
     @JoinColumn(name="pickuplocation_id",nullable=false)
     private Location location;
+
     @ManyToOne
     @JoinColumn(name="droplocaion_id",nullable=false)
     private Location location;
+
     private Double weight;
+
     private LocalDate scheduledDate;
 
-    Public Long 
+    public Long getID(){
+        return id;
+    }
+    public void setVehicle(Vehicle vehicle){
+        this.vehicle = vehicle;
+    }
+    public Vehicle getVehicle(){
+        return vehicle;
+    }
+    public 
+
 
 
 }
