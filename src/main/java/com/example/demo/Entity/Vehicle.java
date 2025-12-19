@@ -35,7 +35,12 @@ public class Vehicle(){
     public Double getCapacity(){
         return capacitykg;
     }
-    public User setUser()
+    public User setUser(User user){
+        this.user = user;
+    }
+    public void setFuel(Double fuelEfficiency ){
+        this.fuelEfficiency = fuelEfficiency;
+    }
 
     
 
