@@ -25,7 +25,23 @@ public class RouterOptimiztionResult{
     public void setShipment(Shipment shipment){
         this.shipment = shipment;
     }
-    public Shipment get
+    public Shipment getShipment(){
+        return shipment;
+    }
+    private Double optimizedDistanceKm;
+    private Double optimizedDistanceKm;
+    public void setOptimizedDistanceKm(Double optimizedDistanceKm){
+        this.optimizedDistanceKm = optimizedDistanceKm;
+    }
+    public Double getOptimizedDistanceKm(){
+        return optimizedDistanceKm;
+    }
+    public void setEstimatedFuelUsage(Double estimatedFuelUsage){
+        this.estimatedFuelUsage = estimatedFuelUsage;
+    }
 
+    public double getEstimatedFuelUsage(){
+        return estimatedFuelUsage;
+    }
 
 }
