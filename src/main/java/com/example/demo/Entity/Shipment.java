@@ -14,6 +14,10 @@ public class Shipment{
     @JoinColumn(name="vehicle_id",nullable=false)
     private Vehicle vehicle;
     @ManyToOne
-    @JoinColumn(name="")
+    @JoinColumn(name="pickuplocation_id",nullable=false)
+    private Location location;
+    @ManyToOne
+    @JoinColumn(name="droplocaion_id",nullable=false)
+    private Location location;
 
 }
