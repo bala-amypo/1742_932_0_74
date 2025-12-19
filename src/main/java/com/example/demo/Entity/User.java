@@ -1,2 +1,12 @@
 package com.example.demo.Entity;
-import jakarta.persistence
+import jakarta.persistence.*;
+
+
+@Entity
+
+public class User{
+ 
+ 
+
+
+}
