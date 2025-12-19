@@ -28,8 +28,18 @@ public class User{
         return id;
     }
 
-    public void setName(String )
-
+    public void setName(String name){
+        this.name = name;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setEmail(){
+        this.email = email;
+    }
+    public String getEmail(){
+        return 
+    }
 
 
     
