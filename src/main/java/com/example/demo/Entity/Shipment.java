@@ -1,5 +1,6 @@
 package com.example.demo.Entity;
 import jakarta.persistence.*;
+import java.time.LocalDate;
 
 @Entity
 @Table(name="Shipment")
@@ -9,7 +10,7 @@ public class Shipment{
     }
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private int id;
+    private long id;
     @ManyToOne
     @JoinColumn(name="vehicle_id",nullable=false)
     private Vehicle vehicle;
@@ -19,5 +20,10 @@ public class Shipment{
     @ManyToOne
     @JoinColumn(name="droplocaion_id",nullable=false)
     private Location location;
+    private Double weight;
+    private LocalDate scheduledDate;
+
+    Public Long 
+
 
 }
