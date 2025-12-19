@@ -46,10 +46,12 @@ public class User{
     public String getpass(){
         return password;
     }
-    public String setRole(String role){
+    public void setRole(String role){
       this.role = role;
     }
-    public void
+    public String getRole(){
+        return role;
+    }
 
 
     
