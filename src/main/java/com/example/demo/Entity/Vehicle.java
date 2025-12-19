@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 @Table(name="Vehicle",uniqueConstraints={
     @UniqueConstraint(columnNames="vehicleNumber")
 })
-public class Vehicle(){
+public class Vehicle{
     public Vehicle(){
 
     }
@@ -23,16 +23,16 @@ public class Vehicle(){
     public Long getID(){
         return id;
     }
-    public void setVehicle(String vehicleNumber){
+    public void setVehicleNumber(String vehicleNumber){
         this.vehicleNumber = vehicleNumber;
     }
-    public String getVehicle(){
+    public String getVehicleNumber(){
         return vehicleNumber;
     }
-    public void setCapacity(Double capacitykg){
+    public void setCapacitykg(Double capacitykg){
         this.capacitykg = capacitykg;
     }
-    public Double getCapacity(){
+    public Double get capacitykg(){
         return capacitykg;
     }
     public User setUser(User user){
@@ -40,6 +40,9 @@ public class Vehicle(){
     }
     public void setFuel(Double fuelEfficiency ){
         this.fuelEfficiency = fuelEfficiency;
+    }
+    public Double getFule(){
+        return fuelEfficiency;
     }
 
     
